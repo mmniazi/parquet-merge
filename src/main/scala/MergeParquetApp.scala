@@ -23,7 +23,7 @@ object MergeParquetApp extends IOApp.Simple {
         // create 3 stream each having 5 rows
         // write them as 3 separate parquet files
         // read each file back as stream
-        // join streams to for a single stream
+        // join streams to form a single stream
         // write that stream as single file
         Stream
           .range[IO, Int](start = 1, stopExclusive = noOfFiles + 1)
